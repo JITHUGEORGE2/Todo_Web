@@ -1,0 +1,12 @@
+{% extends 'Base.html' %}
+{% block content%}
+ 
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}  <label> eg: yyyy-mm-dd </label>
+    <button type="submit">Confirm</button>
+  
+</form> 
+
+{% endblock %} 
